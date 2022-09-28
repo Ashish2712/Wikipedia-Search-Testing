@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-28T05:08:22.998Z",
+    "end": "2022-09-28T05:08:25.917Z",
+    "duration": 2919,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "64471b7a-3104-4bcc-8732-e86bd73f43ca",
+      "title": "",
+      "fullFile": "cypress/e2e/searchNegative.cy.js",
+      "file": "cypress/e2e/searchNegative.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f37cd1c-72e9-49d6-8181-41f90ba1c9fa",
+          "title": "Negative search pattern",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open wikipedia search page",
+              "fullTitle": "Negative search pattern open wikipedia search page",
+              "timedOut": null,
+              "duration": 349,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.wikipedia.org/');",
+              "err": {},
+              "uuid": "4aa1804b-8e9c-429a-a027-9ddb8830b84e",
+              "parentUUID": "1f37cd1c-72e9-49d6-8181-41f90ba1c9fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify empty search yields no result",
+              "fullTitle": "Negative search pattern verify empty search yields no result",
+              "timedOut": null,
+              "duration": 1533,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_search.default.click_search_bar();",
+              "err": {},
+              "uuid": "57761354-1e88-4f9f-801f-fbff8ddd3808",
+              "parentUUID": "1f37cd1c-72e9-49d6-8181-41f90ba1c9fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify no search suggestion for empty search",
+              "fullTitle": "Negative search pattern verify no search suggestion for empty search",
+              "timedOut": null,
+              "duration": 67,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_search.default.click_empty_search_yields_no_result();",
+              "err": {},
+              "uuid": "884eeabe-e6ff-4d59-9163-9df29ec47ff1",
+              "parentUUID": "1f37cd1c-72e9-49d6-8181-41f90ba1c9fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4aa1804b-8e9c-429a-a027-9ddb8830b84e",
+            "57761354-1e88-4f9f-801f-fbff8ddd3808",
+            "884eeabe-e6ff-4d59-9163-9df29ec47ff1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1949,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
