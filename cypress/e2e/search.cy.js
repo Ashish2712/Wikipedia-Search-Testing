@@ -11,6 +11,7 @@ describe('positive search', () => {
     SearchPage.enter_keyword('apollo 11')
     SearchPage.select_language('en')
     // cy.get('#searchLanguage>option').select('EN')
+    // testing ci ignore this comment
     SearchPage.click_search_bar()
   })
 
