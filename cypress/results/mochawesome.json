@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-28T08:34:19.534Z",
+    "end": "2022-09-28T08:34:25.547Z",
+    "duration": 6013,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d518ca75-fd05-479d-b588-959de3da60c3",
+      "title": "",
+      "fullFile": "cypress/e2e/search.cy.js",
+      "file": "cypress/e2e/search.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cf82edf0-f9e7-403f-8535-79bbc0c93202",
+          "title": "positive search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open wikipedia search page",
+              "fullTitle": "positive search open wikipedia search page",
+              "timedOut": null,
+              "duration": 561,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.wikipedia.org/');\ncy.url().should('include', 'wikipedia');",
+              "err": {},
+              "uuid": "535b3cfd-70b2-4c2d-855e-9600042e96a7",
+              "parentUUID": "cf82edf0-f9e7-403f-8535-79bbc0c93202",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "enter the word to search",
+              "fullTitle": "positive search enter the word to search",
+              "timedOut": null,
+              "duration": 3924,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_search.default.enter_keyword('apollo 11');\n_search.default.select_language('en'); // cy.get('#searchLanguage>option').select('EN')\n\n_search.default.click_search_bar();",
+              "err": {},
+              "uuid": "b081a681-9cea-43fc-be30-cbf7e9ced252",
+              "parentUUID": "cf82edf0-f9e7-403f-8535-79bbc0c93202",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify the title on the navigated page",
+              "fullTitle": "positive search verify the title on the navigated page",
+              "timedOut": null,
+              "duration": 34,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('include', 'Apollo 11');",
+              "err": {},
+              "uuid": "bebfb08b-1be7-4ec5-b7f3-26d7bb5d31b3",
+              "parentUUID": "cf82edf0-f9e7-403f-8535-79bbc0c93202",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify the url on the navigated page",
+              "fullTitle": "positive search verify the url on the navigated page",
+              "timedOut": null,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('include', 'Apollo 11');",
+              "err": {},
+              "uuid": "3abda47d-03a3-4f77-ac44-2d2628820128",
+              "parentUUID": "cf82edf0-f9e7-403f-8535-79bbc0c93202",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "go back to previous page",
+              "fullTitle": "positive search go back to previous page",
+              "timedOut": null,
+              "duration": 141,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.go('back');",
+              "err": {},
+              "uuid": "c464e86d-6c2e-4de8-8813-1efaf5647cb1",
+              "parentUUID": "cf82edf0-f9e7-403f-8535-79bbc0c93202",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "535b3cfd-70b2-4c2d-855e-9600042e96a7",
+            "b081a681-9cea-43fc-be30-cbf7e9ced252",
+            "bebfb08b-1be7-4ec5-b7f3-26d7bb5d31b3",
+            "3abda47d-03a3-4f77-ac44-2d2628820128",
+            "c464e86d-6c2e-4de8-8813-1efaf5647cb1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4665,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
