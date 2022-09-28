@@ -1,5 +1,7 @@
 # Wikipedia-Search-Testing
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Ashish2712/Wikipedia-Search-Testing/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Ashish2712/Wikipedia-Search-Testing/tree/main)
+
 This repo is Free-now frontend assignment.
 We need to test and automate the Wikipedia’s search feature in this assignment.
 
