@@ -50,4 +50,7 @@ Steps to install Cypress
    this demo we will be following page object approach so will create the directory structure
    accordingly.
    
+7. One can run the automatoin using npx cypress run this command will run the automtion in headless mode.
+8. I have Integrated circle ci, so once you merge your branch it will trigger the automation.
+   
    
